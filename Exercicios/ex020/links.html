@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesonalizando links</title>
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+           :: = pseudo-element
+            > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            background-color: aqua;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            border: 1px  solid black;
+            height: 200px;
+            width: 500px;
+            padding: 20px;
+            margin: 70px;
+            outline: solid yellow;
+
+        }
+        
+        a:hover {
+            color:black;
+            text-decoration: underline;
+        }
+        a:active{
+            color:yellow;
+        }
+        .especial::after{
+            content: ' ♣';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial::before{
+            content: '♣ ';
+            text-decoration: none;
+            font-weight: none;
+        }
+        span{
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links com pseudo elementos</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae adipisci, <span>quibusdam</span> ut aspernatur enim dolor ipsa minima. Earum nisi voluptatum, voluptas ea nam provident, ipsum culpa iusto quo, animi vel?</p>   
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="
+            _blank" class="especial">Repositorio GitHub</a></li>
+        <li><a href="#">Canal do YouTube</a></li>
+        <li><a href="#">Site do Curso em Video</a></li>
+
+    </ul>
+    <p> meus zovo</p>
+</body>
+</html>
